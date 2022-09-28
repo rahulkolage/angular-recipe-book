@@ -1,0 +1,45 @@
+<app-header></app-header>
+<!-- (featureSelected)="onNavigate($event)"
+  No longer needed as we switched to routes
+-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <app-recipes *ngIf="loadedFeature === 'recipe'"></app-recipes>
+      <br />
+      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list> -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <div class="row">
+    <div class="col-md-12">
+      <label>
+        Credit Card Number
+        <input
+          [value]=""
+          name="credit-card"
+          type="text"
+          placeholder="Enter your 16-digit card number"
+          credit-card
+        />
+      </label>
+    </div>
+  </div>
+
+  <!-- // control directive inside component -->
+  <!-- <div class="row">
+    <div class="col-md-12">
+      <label tooltip="3 digits, back of your card"
+      #myTooltip="tooltip">
+        Enter your security code
+        <span
+        (mouseover)="myTooltip.show()"
+        (mouseout)="myTooltip.hide()">(?)</span>
+        <input type="text" />
+      </label>
+    </div>
+  </div> -->
+</div>
