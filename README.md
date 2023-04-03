@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+# Angular 14 project 
+
+# serve your application with nvm and local Angular CLI
+nvm exec npm start
+# create an Angular component using local Angular CLI
+nvm exec npm run ng g component my-cool-component
+
+# Using multiple angular cli versions
+https://levelup.gitconnected.com/how-to-run-multiple-node-and-angular-versions-simultaneously-1f58e6d150de
+
+==========
+in root of project directory, to run project in specific node version
+echo "16.14.0" > .nvmrc
+
+https://www.sharepointcafe.net/2023/02/can-we-install-multiple-versions-of-angular-on-a-single-system.html
+
+# 👇️ delete node_modules and package-lock.json
+rm -rf node_modules
+rm -f package-lock.json
+
+# 👇️ clean npm cache
+npm cache clean --force
+
+npm install
